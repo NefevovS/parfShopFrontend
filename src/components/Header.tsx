@@ -50,7 +50,7 @@ export default function Header() {
   ]);
   useEffect(() => {
     activeMenuButtonHandler();
-  }, [navigation]);
+  }, [location]);
 
   return (
     <>
