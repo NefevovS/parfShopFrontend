@@ -7,6 +7,7 @@ import Contacts from "./Pages/Contacts";
 import Shops from "./Pages/Shops";
 import Admin from "./Pages/Admin";
 import Auth from "./Pages/Auth";
+import Product from "./Pages/Product";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/catalog" element={<Catalog/>}/>
+                    <Route path="/catalog/:id" element={<Product/>}/>
                     <Route path="/contacts" element={<Contacts/>}/>
                     <Route path="/shops" element={<Shops/>}/>
                     <Route path="/admin" element={<Admin/>}/>
