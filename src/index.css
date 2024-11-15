@@ -1,3 +1,6 @@
 .shadow:hover{
-    box-shadow: 10px 5px 5px burlywood !important;
+    box-shadow: 10px 5px 5px #212529 !important;
+}
+.bg-gray{
+    background-color: #2e1817 !important;
 }

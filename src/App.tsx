@@ -1,22 +1,29 @@
 import './App.css'
-import Product from "./components/Product";
-import {Container} from "react-bootstrap";
-import {useSelector} from "react-redux";
+import NavBar from "./components/NavBar";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Home from "./Pages/Home";
+import Catalog from "./Pages/Catalog";
+import Contacts from "./Pages/Contacts";
+import Shops from "./Pages/Shops";
+import Admin from "./Pages/Admin";
+import Auth from "./Pages/Auth";
 
 function App() {
-    const product=useSelector(state=>state)
-    console.log(product)
 
     return (
         <>
-            <Container >
-                <div className="d-flex justify-content-between m-5 flex-wrap gap-2 ">
-                    <Product product={product}/>
+            <BrowserRouter>
+                <NavBar/>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/catalog" element={<Catalog/>}/>
+                    <Route path="/contacts" element={<Contacts/>}/>
+                    <Route path="/shops" element={<Shops/>}/>
+                    <Route path="/admin" element={<Admin/>}/>
+                    <Route path="/auth" element={<Auth/>}/>
+                </Routes>
 
-                </div>
-
-
-            </Container>
+            </BrowserRouter>
 
         </>
     )
