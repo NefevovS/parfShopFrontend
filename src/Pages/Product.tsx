@@ -1,29 +1,29 @@
 import React from 'react';
 import {Link, useParams} from "react-router-dom"
 import {useStore} from "react-redux";
-import {Container} from "react-bootstrap";
+import {Button, Container} from "react-bootstrap";
 
 const Product = () => {
     const {id} = useParams()
     const store = useStore()
     const product = store.getState()
-    console.log(product)
     return (
-        <Container className="d-flex justify-content-between">
+        <Container className="d-flex justify-content-between p-5">
             <div sm={4}>
-                <img src={product.img} alt="productImage" style={{width:"350px"}}/>
+                <img src={product.img} alt="productImage" style={{width: "350px"}}/>
             </div>
-            <div sm={8} >
+            <div sm={8}>
                 <p className="fw-bold">{product.name}</p>
                 <p className="fw-bold">{product.type}</p>
-                <p className="fw-bold">{product.price}.-</p>
+                <div className="d-flex gap-5 align-items-center">
+                    <div className="fw-bold fs-5 align-middle">{product.price}.-</div>
+                    <form action="POST">
+                        <Button className="text-bg-dark">Купить</Button>
+                    </form>
+                </div>
 
-                <p>{product.brand}</p>
                 <div>
                     {product.description.map(i => <p>{i.description}</p>)}
-                </div>
-                <div>
-                    {product.notes.map(i => <p>{i.name}</p>)}
                 </div>
 
                 <div>
@@ -36,13 +36,16 @@ const Product = () => {
                                 {i.description}
                             </dd>
                         </>)}
-                        <div>Ноты:</div>
-                        {product.notes.map(i =>
-                        <div>
-                            <Link to={`/notes/${i.id}`} >
-                                {i.name}
-                            </Link>
-                        </div>)}
+                        <dt>Ноты:</dt>
+                        <div className="d-flex flex-wrap gap-1 w-50">
+                            {product.notes.map(i =>
+                                <dt>
+                                    <Link to={`/notes/${i.id}`}>
+                                        <span className="badge text-bg-dark ">{i.name}</span>
+                                    </Link>
+                                </dt>)}
+                        </div>
+
                     </dl>
 
                 </div>

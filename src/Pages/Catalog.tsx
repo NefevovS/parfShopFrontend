@@ -5,7 +5,6 @@ const Catalog = () => {
     return (
         <div>
             catalog
-
             <ProductList/>
         </div>
     );
