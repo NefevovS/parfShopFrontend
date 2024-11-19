@@ -6,7 +6,7 @@ import {Button, Container} from "react-bootstrap";
 const Product = () => {
     const {id} = useParams()
     const store = useStore()
-    const product = store.getState()
+    const product = store.getState().find((p)=>p.id==id)
     return (
         <Container className="d-flex justify-content-between p-5">
             <div sm={4}>

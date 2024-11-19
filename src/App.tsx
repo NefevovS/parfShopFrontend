@@ -8,6 +8,9 @@ import Shops from "./Pages/Shops";
 import Admin from "./Pages/Admin";
 import Auth from "./Pages/Auth";
 import Product from "./Pages/Product";
+import Special from "./Pages/Special";
+import New from "./Pages/New";
+import Cart from "./Pages/Cart";
 
 function App() {
 
@@ -23,6 +26,9 @@ function App() {
                     <Route path="/shops" element={<Shops/>}/>
                     <Route path="/admin" element={<Admin/>}/>
                     <Route path="/auth" element={<Auth/>}/>
+                    <Route path="/catalog/new" element={<New/>}/>
+                    <Route path="/catalog/special" element={<Special/>}/>
+                    <Route path="/cart" element={<Cart/>}/>
                 </Routes>
 
             </BrowserRouter>

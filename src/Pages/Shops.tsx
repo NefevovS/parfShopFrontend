@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col, Container, Row} from "react-bootstrap";
+import { Container} from "react-bootstrap";
 
 const Shops = () => {
     return <Container className="p-5 d-flex flex-column align-items-center">

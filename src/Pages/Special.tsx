@@ -1,10 +1,9 @@
 import React from 'react';
 import ProductList from "../components/ProductList";
 import {useStore} from "react-redux";
-import product from "./Product";
 import {Container} from "react-bootstrap";
 
-const Catalog = () => {
+const Special = () => {
     const store = useStore()
     const product = store.getState()
     return (
@@ -14,4 +13,4 @@ const Catalog = () => {
     );
 };
 
-export default Catalog;
+export default Special;

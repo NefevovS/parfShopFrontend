@@ -4,3 +4,17 @@
 .bg-gray{
     background-color: #2e1817 !important;
 }
+.wrapper{
+    position: relative;
+}
+
+.wrapper span{
+    content:attr(data-count string);
+    position: absolute;
+    top: -2px;
+    left: 20px;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50% 50%;
+}
