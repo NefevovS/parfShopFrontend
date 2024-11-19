@@ -39,10 +39,10 @@ const NavBar = () => {
                         </li>
                     </ul>):(<ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link className="nav-link text-white" aria-current="page" to="/shops" >Зарегистрироваться</Link>
+                            <Link className="nav-link text-white" aria-current="page" to="/auth" >Зарегистрироваться</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link text-white" to="/catalog">Войти</Link>
+                            <Link className="nav-link text-white" to="/auth">Войти</Link>
                         </li></ul>)}
 
                 </div>
