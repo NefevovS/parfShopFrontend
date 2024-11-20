@@ -27,7 +27,7 @@ const BrandList = () => {
 
     return (
         <Container>
-            <div className="d-flex flex-column flex-wrap vh-100">
+            <div className="d-flex flex-column flex-wrap vh-100 m-5 gap-4">
                 {brands
                     .sort((a, b) => {
                         const nameA = a.name.toUpperCase();
@@ -41,7 +41,7 @@ const BrandList = () => {
                         return 0;
                     })
                     .map(brand => <Link to={`brand/${brand.id}`} key={brand.id}
-                                        className="text-reset text-decoration-none text-underline-hover p-2 m-2">{brand.name}</Link>)}
+                                        className="text-reset text-decoration-none text-underline-hover brands">{brand.name}</Link>)}
             </div>
 
         </Container>
