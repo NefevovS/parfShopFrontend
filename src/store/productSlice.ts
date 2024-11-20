@@ -4,15 +4,18 @@ interface Notes {
     id: number,
     name: string,
 }
+
 interface ProductInfo {
     id: number,
     title: string,
     description: string,
 }
+
 interface Description {
     id: number,
     description: string
 }
+
 interface ProductState {
     id: number,
     name: string,
@@ -32,7 +35,7 @@ const initialState: Array<ProductState> = [{
     price: 38000,
     type: "Духи",
     brand: "AGATHO",
-    img: ".././agatho1.png",
+    img: "../.././agatho1.png",
     description: [{
         id: 1,
         description: "По садам и цитрусовым рощам Помпеи Силен бродит и поет свои песни. Легким шагом, с едкой улыбкой он шевелит листья апельсиновых деревьев. Нежные цветы опадают и излучают свежие зеленые ноты."
@@ -47,13 +50,10 @@ const initialState: Array<ProductState> = [{
     ],
     discount: 30,
     notes: [{id: 1, name: "драгоценное дерево"}, {id: 2, name: "иланг-иланг"}, {id: 3, name: "кедр"}, {
-        id: 4,
-        name: "морские ноты"
+        id: 4, name: "морские ноты"
     }, {id: 5, name: "перец Сычуань"}, {id: 6, name: "фрукты"}, {id: 7, name: "цветочные ноты"},],
     productInfo: [{id: 1, title: "Страна", description: "Италия"}, {
-        id: 2,
-        title: "Объем",
-        description: "100 мл"
+        id: 2, title: "Объем", description: "100 мл"
     }, {id: 3, title: "Аромат", description: "Для всех"},]
 
 }, {
@@ -62,7 +62,7 @@ const initialState: Array<ProductState> = [{
     price: 38000,
     type: "Духи",
     brand: "AGATHO",
-    img: ".././agatho1.png",
+    img: "../.././agatho1.png",
     description: [{
         id: 1,
         description: "По садам и цитрусовым рощам Помпеи Силен бродит и поет свои песни. Легким шагом, с едкой улыбкой он шевелит листья апельсиновых деревьев. Нежные цветы опадают и излучают свежие зеленые ноты."
@@ -77,13 +77,10 @@ const initialState: Array<ProductState> = [{
     ],
     discount: 30,
     notes: [{id: 1, name: "драгоценное дерево"}, {id: 2, name: "иланг-иланг"}, {id: 3, name: "кедр"}, {
-        id: 4,
-        name: "морские ноты"
+        id: 4, name: "морские ноты"
     }, {id: 5, name: "перец Сычуань"}, {id: 6, name: "фрукты"}, {id: 7, name: "цветочные ноты"},],
     productInfo: [{id: 1, title: "Страна", description: "Италия"}, {
-        id: 2,
-        title: "Объем",
-        description: "100 мл"
+        id: 2, title: "Объем", description: "100 мл"
     }, {id: 3, title: "Аромат", description: "Для всех"},]
 
 }, {
@@ -92,7 +89,7 @@ const initialState: Array<ProductState> = [{
     price: 38000,
     type: "Духи",
     brand: "AGATHO",
-    img: ".././agatho1.png",
+    img: "../.././agatho1.png",
     description: [{
         id: 1,
         description: "По садам и цитрусовым рощам Помпеи Силен бродит и поет свои песни. Легким шагом, с едкой улыбкой он шевелит листья апельсиновых деревьев. Нежные цветы опадают и излучают свежие зеленые ноты."
@@ -107,13 +104,10 @@ const initialState: Array<ProductState> = [{
     ],
     discount: 30,
     notes: [{id: 1, name: "драгоценное дерево"}, {id: 2, name: "иланг-иланг"}, {id: 3, name: "кедр"}, {
-        id: 4,
-        name: "морские ноты"
+        id: 4, name: "морские ноты"
     }, {id: 5, name: "перец Сычуань"}, {id: 6, name: "фрукты"}, {id: 7, name: "цветочные ноты"},],
     productInfo: [{id: 1, title: "Страна", description: "Италия"}, {
-        id: 2,
-        title: "Объем",
-        description: "100 мл"
+        id: 2, title: "Объем", description: "100 мл"
     }, {id: 3, title: "Аромат", description: "Для всех"},]
 
 }, {
@@ -122,7 +116,7 @@ const initialState: Array<ProductState> = [{
     price: 38000,
     type: "Духи",
     brand: "AGATHO",
-    img: ".././agatho1.png",
+    img: "../.././agatho1.png",
     description: [{
         id: 1,
         description: "По садам и цитрусовым рощам Помпеи Силен бродит и поет свои песни. Легким шагом, с едкой улыбкой он шевелит листья апельсиновых деревьев. Нежные цветы опадают и излучают свежие зеленые ноты."
@@ -137,13 +131,10 @@ const initialState: Array<ProductState> = [{
     ],
     discount: 30,
     notes: [{id: 1, name: "драгоценное дерево"}, {id: 2, name: "иланг-иланг"}, {id: 3, name: "кедр"}, {
-        id: 4,
-        name: "морские ноты"
+        id: 4, name: "морские ноты"
     }, {id: 5, name: "перец Сычуань"}, {id: 6, name: "фрукты"}, {id: 7, name: "цветочные ноты"},],
     productInfo: [{id: 1, title: "Страна", description: "Италия"}, {
-        id: 2,
-        title: "Объем",
-        description: "100 мл"
+        id: 2, title: "Объем", description: "100 мл"
     }, {id: 3, title: "Аромат", description: "Для всех"},]
 
 }, {
@@ -152,7 +143,7 @@ const initialState: Array<ProductState> = [{
     price: 38000,
     type: "Духи",
     brand: "AGATHO",
-    img: ".././agatho1.png",
+    img: "../.././agatho1.png",
     description: [{
         id: 1,
         description: "По садам и цитрусовым рощам Помпеи Силен бродит и поет свои песни. Легким шагом, с едкой улыбкой он шевелит листья апельсиновых деревьев. Нежные цветы опадают и излучают свежие зеленые ноты."
@@ -167,13 +158,10 @@ const initialState: Array<ProductState> = [{
     ],
     discount: 30,
     notes: [{id: 1, name: "драгоценное дерево"}, {id: 2, name: "иланг-иланг"}, {id: 3, name: "кедр"}, {
-        id: 4,
-        name: "морские ноты"
+        id: 4, name: "морские ноты"
     }, {id: 5, name: "перец Сычуань"}, {id: 6, name: "фрукты"}, {id: 7, name: "цветочные ноты"},],
     productInfo: [{id: 1, title: "Страна", description: "Италия"}, {
-        id: 2,
-        title: "Объем",
-        description: "100 мл"
+        id: 2, title: "Объем", description: "100 мл"
     }, {id: 3, title: "Аромат", description: "Для всех"},]
 
 }]

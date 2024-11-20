@@ -8,6 +8,9 @@ const Special = () => {
     const product = store.getState()
     return (
         <Container className="p-5">
+            <h2 className="text-reset text-decoration-none">
+                Специальное предложение
+            </h2>
             <ProductList product={product}/>
         </Container>
     );

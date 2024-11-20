@@ -1,12 +1,13 @@
 import React from 'react';
 import ProductList from "../components/ProductList";
 import {useStore} from "react-redux";
-import product from "./Product";
 import {Container} from "react-bootstrap";
+import Product from "./Product";
 
-const Catalog = () => {
+const ProductListPage = () => {
     const store = useStore()
     const product = store.getState()
+    console.log(product)
     return (
         <Container className="p-5">
             <ProductList product={product}/>
@@ -14,4 +15,4 @@ const Catalog = () => {
     );
 };
 
-export default Catalog;
+export default ProductListPage;
