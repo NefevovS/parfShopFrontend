@@ -25,24 +25,29 @@ const BrandList = () => {
         {id: 16, name: "Paolo Gigli"},
         {id: 17, name: "OMNIA"},]
 
+    const alphabetBrends = new Set()
+    const letterArray = brands.map(brand => brand.name.substring(0, 1))
+
+    let sortedArray = letterArray.sort((a, b) => a.localeCompare(b))
+
+    sortedArray.forEach((i)=>alphabetBrends.add(i))
+    sortedArray=[];
+
+    alphabetBrends.forEach(i=>sortedArray.push(i))
+
     return (
         <Container>
-            <div className="d-flex flex-column flex-wrap vh-100 m-5 gap-4">
-                {brands
-                    .sort((a, b) => {
-                        const nameA = a.name.toUpperCase();
-                        const nameB = b.name.toUpperCase();
-                        if (nameA < nameB) {
-                            return -1;
-                        }
-                        if (nameA > nameB) {
-                            return 1;
-                        }
-                        return 0;
-                    })
-                    .map(brand => <Link to={`brand/${brand.id}`} key={brand.id}
-                                        className="text-reset text-decoration-none text-underline-hover brands">{brand.name}</Link>)}
-            </div>
+            <ul className="d-flex flex-column flex-wrap vh-100 m-5 gap-4">
+              {sortedArray.map(letter =><li>
+                  <h3>{letter}</h3>
+                  <ul>
+                      {
+                        brands.map(i=>i.name.substring(0,1)===letter?<li>{i.name}</li>:null)
+                      }
+                  </ul>
+
+              </li>)}
+            </ul>
 
         </Container>
     );

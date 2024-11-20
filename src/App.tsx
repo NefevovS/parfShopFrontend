@@ -13,6 +13,7 @@ import Cart from "./Pages/Cart";
 import BrandList from "./Pages/BrandList";
 import Product from "./Pages/Product";
 import NoteListPage from "./Pages/NoteListPage";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -20,20 +21,24 @@ function App() {
         <>
             <BrowserRouter>
                 <NavBar/>
-                <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/catalog" element={<BrandList/>}/>
-                    <Route path="/catalog/brand/:brandId" element={<ProductListPage/>}/>
-                    <Route path="/catalog/:id" element={<Product/>}/>
-                    <Route path="/catalog/new" element={<New/>}/>
-                    <Route path="/catalog/special" element={<Special/>}/>
-                    <Route path="/notes/:id" element={<NoteListPage/>}/>
-                    <Route path="/contacts" element={<Contacts/>}/>
-                    <Route path="/shops" element={<Shops/>}/>
-                    <Route path="/admin" element={<Admin/>}/>
-                    <Route path="/auth" element={<Auth/>}/>
-                    <Route path="/cart" element={<Cart/>}/>
-                </Routes>
+
+                    <Routes>
+                        <Route path="/" element={<Home/>}/>
+                        <Route path="/catalog" element={<BrandList/>}/>
+                        <Route path="/catalog/brand/:brandId" element={<ProductListPage/>}/>
+                        <Route path="/catalog/:id" element={<Product/>}/>
+                        <Route path="/catalog/new" element={<New/>}/>
+                        <Route path="/catalog/special" element={<Special/>}/>
+                        <Route path="/notes/:id" element={<NoteListPage/>}/>
+                        <Route path="/contacts" element={<Contacts/>}/>
+                        <Route path="/shops" element={<Shops/>}/>
+                        <Route path="/admin" element={<Admin/>}/>
+                        <Route path="/auth" element={<Auth/>}/>
+                        <Route path="/cart" element={<Cart/>}/>
+                    </Routes>
+
+
+                <Footer/>
 
             </BrowserRouter>
 

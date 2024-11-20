@@ -22,3 +22,9 @@
 .text-underline-hover:hover {
     text-decoration: underline; !important;
 }
+*{
+    list-style: none;
+}
+.height_container{
+    height: calc(100vh - 50px);
+}

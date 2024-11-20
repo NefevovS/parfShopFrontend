@@ -2,7 +2,7 @@ import React from 'react';
 import {Container} from "react-bootstrap";
 
 const Contacts = () => {
-    return (<Container className="p-5 d-flex flex-column ">
+    return (<Container className="p-5 d-flex flex-column height_container" style={{"margin-top":"-50px"}}>
             <h1 >Контактные данные</h1>
             <div className="d-flex mb-5 gap-2">
                 <div>e-mail:</div>

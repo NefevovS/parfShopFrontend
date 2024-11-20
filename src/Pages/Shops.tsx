@@ -2,7 +2,7 @@ import React from 'react';
 import { Container} from "react-bootstrap";
 
 const Shops = () => {
-    return <Container className="p-5 d-flex flex-column align-items-center">
+    return <Container className="p-5 d-flex flex-column align-items-center height_container">
         <div>
             <img src="salon1.jpg" alt="salon" className="rounded w-auto img-fluid"/>
             <h3 className='m-4'>
