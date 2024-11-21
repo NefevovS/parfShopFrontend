@@ -14,6 +14,7 @@ import BrandList from "./Pages/BrandList";
 import Product from "./Pages/Product";
 import NoteListPage from "./Pages/NoteListPage";
 import Footer from "./components/Footer";
+import Policy from "./Pages/Policy";
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
                         <Route path="/admin" element={<Admin/>}/>
                         <Route path="/auth" element={<Auth/>}/>
                         <Route path="/cart" element={<Cart/>}/>
+                        <Route path="/policy" element={<Policy/>}/>
                     </Routes>
 
 

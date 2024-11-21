@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import logo from "../assets/logo.svg"
 
 const NavBar = () => {
-    const [isAuth,setIsAuth]=useState(false)
+    const [isAuth,setIsAuth]=useState(true)
 
     return (<nav className="navbar navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
             <div className="container-fluid">
