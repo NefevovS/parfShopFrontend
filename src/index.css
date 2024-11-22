@@ -28,3 +28,18 @@
 .height_container{
     height: calc(100vh - 50px);
 }
+
+.carousel-item>div {
+    height:60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*overflow: hidden;*/
+    background-color: rgb(33,37,41);
+
+}
+.carousel-item > img{
+    display: block;
+    object-fit: cover;
+}
