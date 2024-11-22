@@ -11,13 +11,10 @@ const Home = () => {
     return (
         <>
             <HomeCarousel/>
-
-
             <Container className="mt-4">
-
-
                 <div className="my-4">
-                    <p className="col-md-6 col-xs-12  d-inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda doloremque explicabo facilis
+                    <p className="col-md-6 col-xs-12  d-inline-block">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Assumenda doloremque explicabo facilis
                         officiis? Blanditiis dolorem doloremque eligendi eos id illum, itaque minima nobis quasi qui
                         quisquam sunt veritatis voluptates. Dolores?</p>
 

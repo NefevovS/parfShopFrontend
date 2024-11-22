@@ -94,32 +94,35 @@ const Cart = () => {
                 <tbody>
                 {
                     product.map(pr =>
-                        <tr>
+                        <tr >
 
-                            <td className="p-2 " scope="row">
+                            <td scope="row">
                                 <img src={pr.product.img} alt="product" style={{"width": "62px"}}/>
                             </td>
 
-                            <td className="p-2 w-50 ">
+                            <td className=" w-50 ">
                                 <div>
                                     <p className="m-0">{pr.product.name}</p>
                                     <p className="m-0">Код товара:{pr.product.id}</p>
                                 </div>
 
                             </td>
-                            <td className="d-flex w-50 align-content-center">
-                                <a href="#" className="text-decoration-none text-danger fs-5 fw-bold p-3">-</a>
-                                <div className="input-group">
-                                    <input type="text" className="form-control"
-                                           aria-label="quantity" value={1}/>
+                            <td>
+                                <div className='d-flex align-items-center gap-3 '>
+                                    <a href="#" className="text-decoration-none text-danger fs-5 fw-bold ">-</a>
+                                    <div className="input-group" style={{"width": "50px"}}>
+                                        <input type="text" className="form-control"
+                                               aria-label="quantity" value={1}/>
+                                    </div>
+                                    <a href="#" className="text-decoration-none text-danger fs-5 fw-bold "
+                                    >+</a>
                                 </div>
-                                <a href="#" className="text-decoration-none text-danger fs-5 fw-bold p-3"
-                                   style={{"width": "20px"}}>+</a>
+
                             </td>
-                            <td className="p-2 align-middle">
+                            <td >
                                 <p>{pr.product.price} руб.</p>
                             </td>
-                            <td className="p-2">
+                            <td >
                                 <a href="#" className="btn alert-danger">&#10006;</a>
                             </td>
                         </tr>

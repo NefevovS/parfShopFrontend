@@ -19,9 +19,7 @@
     border-radius: 50% 50%;
 }
 
-.text-underline-hover:hover {
-    text-decoration: underline; !important;
-}
+
 *{
     list-style: none;
 }
@@ -35,11 +33,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*overflow: hidden;*/
     background-color: rgb(33,37,41);
 
 }
 .carousel-item > img{
     display: block;
     object-fit: cover;
+}
+
+.image{
+    width: 100%;
+    height: 80%;
+    min-height: 592px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;}
+.arteOlfato{
+    background-image: url("/carousel/arteOlfato.jpg");
+}
+.culti{
+    background-image: url("/carousel/culti.jpg");
+}
+.mdci{
+     background-image: url("/carousel/mdci.jpg");
+}
+.mdci2{
+     background-image: url("/carousel/mdci2.jpg");
+}
+.nayassia{
+     background-image: url("/carousel/nayassia.jpg");
+}
+.oroGold{
+     background-image: url("/carousel/oroGold.jpg");
+}
+.panouge{
+     background-image: url("/carousel/panouge.jpg");
+}
+.perfumeCult{
+     background-image: url("/carousel/perfumeCult.jpg");
 }

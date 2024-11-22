@@ -5,50 +5,35 @@ const HomeCarousel = () => {
     return (
         <Carousel>
             <Carousel.Item>
-                <div>
-                    <img src="/carousel/arteOlfato.jpg" alt="arteOlfato"/>
+                <div className="image arteOlfato">
                 </div>
             </Carousel.Item>
             <Carousel.Item>
-                <div>
-
-                    <img src="/carousel/culti.jpg" alt="culti"/>
+                <div className="image culti">
                 </div>
             </Carousel.Item>
             <Carousel.Item>
-                <div>
-
-                    <img src="/carousel/mdci.jpg" alt="mdci"/>
+                <div className="image mdci">
                 </div>
             </Carousel.Item>
             <Carousel.Item>
-                <div>
-
-                    <img src="/carousel/nayassia.jpg" alt="nayassia"/>
+                <div className="image nayassia">
                 </div>
             </Carousel.Item>
             <Carousel.Item>
-                <div>
-
-                    <img src="/carousel/oroGold.jpg" alt="oroGold"/>
+                <div className="image oroGold">
                 </div>
             </Carousel.Item>
             <Carousel.Item>
-                <div>
-
-                    <img src="/carousel/mdci2.jpg" alt="mdci"/>
+                <div className="image panouge">
                 </div>
             </Carousel.Item>
             <Carousel.Item>
-                <div>
-
-                    <img src="/carousel/panouge.jpg" alt="panouge"/>
+                <div className="image perfumeCult">
                 </div>
             </Carousel.Item>
             <Carousel.Item>
-                <div>
-
-                    <img src="/carousel/perfumeCult.jpg" alt="perfumeCult"/>
+                <div className="image mdci2">
                 </div>
             </Carousel.Item>
         </Carousel>
