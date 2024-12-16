@@ -1,6 +1,6 @@
-// @ts-ignore
-import React from 'react';
+import React, {useState} from 'react';
 import {Container} from "react-bootstrap";
+import {useStore} from "react-redux";
 
 
 const Cart = () => {
@@ -99,6 +99,7 @@ const Cart = () => {
                             <td className="p-2 " scope="row">
                                 <img src={pr.product.img} alt="product" style={{"width": "62px"}}/>
                             </td>
+
                             <td className="p-2 w-50 ">
                                 <div>
                                     <p className="m-0">{pr.product.name}</p>
@@ -106,19 +107,15 @@ const Cart = () => {
                                 </div>
 
                             </td>
-                            <td>
-                                <div className="d-flex align-content-center ">
-                                    <a href="#" className="text-decoration-none text-danger fs-5 fw-bold d-inline-block align-content-center text-center w-25" >-</a>
-                                    <div className="input-group" style={{width: "3rem", height: "3rem"}}>
-                                        <input type="text" className="form-control align-middle text-center"
-                                               aria-label="quantity" value={1}/>
-                                    </div>
-                                    <a href="#" className="text-decoration-none text-danger fs-5 fw-bold d-inline-block align-content-center text-center w-25 "
-                                       >+</a>
+                            <td className="d-flex w-50 align-content-center">
+                                <a href="#" className="text-decoration-none text-danger fs-5 fw-bold p-3">-</a>
+                                <div className="input-group">
+                                    <input type="text" className="form-control"
+                                           aria-label="quantity" value={1}/>
                                 </div>
-
+                                <a href="#" className="text-decoration-none text-danger fs-5 fw-bold p-3"
+                                   style={{"width": "20px"}}>+</a>
                             </td>
-
                             <td className="p-2 align-middle">
                                 <p>{pr.product.price} руб.</p>
                             </td>
@@ -131,9 +128,9 @@ const Cart = () => {
                 </tbody>
             </table>
             <div className="mb-xl-5">
-            <h3>Итого:"сумма корзины" руб.</h3>
+                <h3>Итого:"сумма корзины" руб.</h3>
             </div>
-            <form>
+            <form action="POST">
                 <div className="row mb-3">
                     <div className="col-md-4 col-xs-12 form-group">
                         <label htmlFor="name" className="fw-bold mb-2">Имя</label>
@@ -171,8 +168,7 @@ const Cart = () => {
                     <div className="col-md-6 col-xs-12">
                         <label htmlFor="payment_method" className="fw-bold mb-2">Способ оплаты</label>
                         <select name="payment_method" className="form-control">
-                            <option value="0"
-                                    selected="selected">Будет предложен менеджером
+                            <option value="0" selected="selected">Будет предложен менеджером
                             </option>
                             <option value="20">Оплата пластиковой картой</option>
                             <option value="30">Оплата курьеру наличными (Санкт-Петербург)</option>

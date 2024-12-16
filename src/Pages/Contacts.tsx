@@ -6,7 +6,7 @@ const Contacts = () => {
             <h1 >Контактные данные</h1>
             <div className="d-flex mb-5 gap-2">
                 <div>e-mail:</div>
-                <a href="mailto:internet@salonparfumer.ru" className="text-reset text-decoration-none">internet@salonparfumer.ru</a>
+                <a href="mailto:internet@perfumeshop.ru" className="text-reset text-decoration-none">internet@perfumeshop.ru</a>
             </div>
             <h3>Интернет-салон</h3>
             <div className="d-flex mb-5 gap-2">
